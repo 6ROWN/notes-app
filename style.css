@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", "Sans-serif";
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  background-color: #0ed2fe;
+}
+
+.add {
+  position: fixed;
+  top: 1rem;
+  right: 3rem;
+  background-color: #d6a65c;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 15px 10px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.notes {
+  background-color: #fff;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+  margin: 40px 25px;
+  height: 400px;
+  /* min-height: 100%; */
+  width: 400px;
+  position: relative;
+}
+
+.notes .tools {
+  background-color: #d6a65c;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.5rem;
+}
+
+.notes .tools button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.notes textarea {
+  outline: none;
+  font-size: 1.2rem;
+  font-family: inherit;
+  border: none;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.date {
+  position: absolute;
+  top: 400px;
+  padding: 10px;
+  background-color: #d6a65c;
+  color: #fff;
+}
